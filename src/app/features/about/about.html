@@ -1,0 +1,36 @@
+<section id="about" class="py-32" style="background:#0a0a0a; border-top: 1px solid rgba(255,255,255,0.05);">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div animateOnScroll class="mb-20">
+      <p class="font-code text-xs text-slate-600 tracking-widest mb-4">// about</p>
+      <h2 class="text-4xl md:text-5xl font-bold text-slate-100 mb-4">{{ t().about.title }}</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-16 items-start">
+
+      <div animateOnScroll class="lg:col-span-3 space-y-6">
+        <p class="text-slate-300 text-lg leading-relaxed">{{ t().about.bio1 }}</p>
+        <p class="text-slate-500 leading-relaxed">{{ t().about.bio2 }}</p>
+
+        <div class="flex flex-wrap gap-2 pt-4">
+          <span class="tag" style="color: #22d3ee; border-color: rgba(34,211,238,0.2); background: rgba(34,211,238,0.05);">Angular</span>
+          <span class="tag" style="color: #4ade80; border-color: rgba(74,222,128,0.2); background: rgba(74,222,128,0.05);">Vue</span>
+          <span class="tag" style="color: #818cf8; border-color: rgba(129,140,248,0.2); background: rgba(129,140,248,0.05);">TypeScript</span>
+          <span class="tag" style="color: #fbbf24; border-color: rgba(251,191,36,0.2); background: rgba(251,191,36,0.05);">JavaScript</span>
+          <span class="tag" style="color: #a78bfa; border-color: rgba(167,139,250,0.2); background: rgba(167,139,250,0.05);">PHP</span>
+          <span class="tag" style="color: #34d399; border-color: rgba(52,211,153,0.2); background: rgba(52,211,153,0.05);">MySQL</span>
+        </div>
+      </div>
+
+      <div animateOnScroll [style.transition-delay]="'200ms'" class="lg:col-span-2 flex justify-center lg:justify-end">
+        <div class="relative w-56 h-56 rounded-2xl flex items-center justify-center card">
+          <div class="absolute inset-0 rounded-2xl opacity-20"
+            style="background: linear-gradient(135deg, #22d3ee, #818cf8); filter: blur(20px);"></div>
+          <span class="relative font-code text-4xl font-bold gradient-text select-none">CB</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

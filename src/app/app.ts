@@ -1,0 +1,17 @@
+import { Component } from '@angular/core';
+import { Header } from './shared/header/header';
+import { Footer } from './shared/footer/footer';
+import { Hero } from './features/hero/hero';
+import { About } from './features/about/about';
+import { Projects } from './features/projects/projects';
+import { Skills } from './features/skills/skills';
+import { Experience } from './features/experience/experience';
+import { Contact } from './features/contact/contact';
+
+@Component({
+  selector: 'app-root',
+  imports: [Header, Footer, Hero, About, Projects, Skills, Experience, Contact],
+  templateUrl: './app.html',
+  styleUrl: './app.scss'
+})
+export class App {}

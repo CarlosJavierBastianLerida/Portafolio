@@ -1,0 +1,67 @@
+<section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden" style="background:#0a0a0a;">
+
+  <!-- Subtle grid -->
+  <div class="absolute inset-0 pointer-events-none"
+    style="background-image: linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px); background-size: 72px 72px;">
+  </div>
+
+  <!-- Single subtle glow -->
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] pointer-events-none"
+    style="background: radial-gradient(ellipse, rgba(99,102,241,0.06) 0%, transparent 70%); filter: blur(40px);">
+  </div>
+
+  <div class="relative z-10 max-w-4xl mx-auto px-6 text-center hero-content">
+
+    <!-- Label -->
+    <p class="font-code text-xs text-slate-600 tracking-widest mb-8">// {{ t().hero.greeting }}</p>
+
+    <!-- Name -->
+    <h1 class="font-bold leading-none mb-8">
+      <span class="block font-code text-slate-600 text-xl md:text-2xl font-light tracking-tight mb-3">
+        Carlos Javier
+      </span>
+      <span class="block gradient-text" style="font-size: clamp(2rem, 6vw, 3.5rem); line-height: 1.1;">
+        Bastian Lérida
+      </span>
+    </h1>
+
+    <!-- Typed role -->
+    <div class="font-code flex items-center justify-center gap-2 mb-10">
+      <span class="text-slate-700">$</span>
+      <span style="color: #34d399; font-size: 0.95rem;">{{ typedRole() }}</span>
+      <span class="cursor" [style.opacity]="cursorVisible() ? '1' : '0'" style="background:#34d399;"></span>
+    </div>
+
+    <!-- Description -->
+    <p class="text-slate-500 text-base md:text-lg max-w-xl mx-auto mb-12 leading-relaxed">
+      {{ t().hero.description }}
+    </p>
+
+    <!-- CTAs -->
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+      <button
+        (click)="scrollTo('projects')"
+        class="font-code text-sm w-full sm:w-auto px-7 py-3 rounded-lg text-white font-medium transition-all duration-200 hover:opacity-90 hover:-translate-y-px"
+        style="background: linear-gradient(135deg, #06b6d4, #818cf8);">
+        {{ t().hero.cta }} →
+      </button>
+      <button
+        (click)="scrollTo('contact')"
+        class="font-code text-sm w-full sm:w-auto px-7 py-3 rounded-lg font-medium transition-all duration-200 hover:-translate-y-px"
+        style="color:#888; border: 1px solid rgba(255,255,255,0.1);"
+        onmouseover="this.style.color='#ededed'; this.style.borderColor='rgba(255,255,255,0.2)'"
+        onmouseout="this.style.color='#888'; this.style.borderColor='rgba(255,255,255,0.1)'">
+        {{ t().hero.ctaContact }}
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+    <span class="font-code text-xs text-slate-700 tracking-widest">scroll</span>
+    <svg class="w-3.5 h-3.5 text-slate-700 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+    </svg>
+  </div>
+</section>

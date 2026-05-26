@@ -1,0 +1,38 @@
+<section id="skills" class="py-32" style="background:#111; border-top: 1px solid rgba(255,255,255,0.05);">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div animateOnScroll class="mb-20">
+      <p class="font-code text-xs text-slate-600 tracking-widest mb-4">// skills</p>
+      <h2 class="text-4xl md:text-5xl font-bold text-slate-100 mb-2">{{ t().skills.title }}</h2>
+      <p class="text-slate-600 text-sm mb-4">{{ t().skills.subtitle }}</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      @for (category of t().skills.categories; track category.name; let ci = $index) {
+        <div animateOnScroll [style.transition-delay]="ci * 150 + 'ms'">
+          <p class="font-code text-xs text-slate-600 tracking-widest uppercase mb-3">
+            {{ category.name }}
+          </p>
+          <p class="text-slate-500 text-xs leading-relaxed mb-5">{{ category.description }}</p>
+          <div class="grid grid-cols-2 gap-2">
+            @for (skill of category.skills; track skill.name) {
+              <div class="skill-card flex items-center gap-3 px-4 py-3 rounded-xl">
+                @if (skill.icon) {
+                  <i [class]="skill.icon" style="font-size: 1.25rem; width: 1.4rem; flex-shrink: 0;"></i>
+                } @else {
+                  <span class="font-code w-5 h-5 flex items-center justify-center rounded text-xs font-bold flex-shrink-0"
+                    style="background: rgba(129,140,248,0.12); color: #818cf8;">
+                    {{ skill.name.charAt(0) }}
+                  </span>
+                }
+                <span class="text-sm text-slate-400 truncate">{{ skill.name }}</span>
+              </div>
+            }
+          </div>
+        </div>
+      }
+    </div>
+
+  </div>
+</section>
