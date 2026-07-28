@@ -18,7 +18,7 @@
             </div>
             <span class="font-code text-xs px-3 py-1 rounded-md"
               style="background: rgba(34,211,238,0.06); color: #67e8f9; border: 1px solid rgba(34,211,238,0.15);">
-              {{ item.from }} — {{ item.to }}
+              @if (item.from) { {{ item.from }} — } {{ item.to }}
             </span>
           </div>
 

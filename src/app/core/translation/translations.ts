@@ -121,21 +121,21 @@ const skills_en: SkillCategory[] = [
 
 const experience_es: ExperienceItem[] = [
   {
-    company: 'Empresa',
-    role: 'Desarrollador de Aplicaciones Web',
-    from: 'Mes Año',
-    to: 'Presente',
-    description: 'Descripción de tus responsabilidades y logros. Reemplaza este texto con tu experiencia real.',
+    company: 'FluyQo',
+    role: 'En búsqueda de mi primera oportunidad profesional',
+    from: '',
+    to: 'Disponibilidad inmediata',
+    description: 'Técnico Superior en Desarrollo de Aplicaciones Web (DAW) con experiencia práctica en desarrollo full-stack a través de proyectos propios en producción, incluyendo una aplicación SaaS completa (diseño, desarrollo y despliegue).',
   },
 ];
 
 const experience_en: ExperienceItem[] = [
   {
-    company: 'Company',
-    role: 'Web Application Developer',
-    from: 'Month Year',
-    to: 'Present',
-    description: 'Description of your responsibilities and achievements. Replace this text with your real experience.',
+    company: 'FluyQo',
+    role: 'Looking for my first professional opportunity',
+    from: '',
+    to: 'Immediate availability',
+    description: 'Higher Technical Degree in Web Application Development (DAW) with hands-on full-stack experience through my own production projects, including a complete SaaS application (design, development and deployment).',
   },
 ];
 
