@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Header } from './shared/header/header';
 import { Footer } from './shared/footer/footer';
 import { Hero } from './features/hero/hero';
@@ -7,6 +7,7 @@ import { Projects } from './features/projects/projects';
 import { Skills } from './features/skills/skills';
 import { Experience } from './features/experience/experience';
 import { Contact } from './features/contact/contact';
+import { AnalyticsService } from './core/services/analytics.service';
 
 @Component({
   selector: 'app-root',
@@ -14,4 +15,8 @@ import { Contact } from './features/contact/contact';
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
-export class App {}
+export class App {
+  constructor() {
+    inject(AnalyticsService).init();
+  }
+}
