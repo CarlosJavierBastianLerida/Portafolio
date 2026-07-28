@@ -89,7 +89,6 @@ const projects_en: Project[] = [
 const skillItems = {
   frontend: [
     { name: 'Angular',      icon: 'devicon-angular-plain colored' },
-    { name: 'Vue',          icon: 'devicon-vuejs-plain colored' },
     { name: 'TypeScript',   icon: 'devicon-typescript-plain colored' },
     { name: 'JavaScript',   icon: 'devicon-javascript-plain colored' },
     { name: 'HTML5',        icon: 'devicon-html5-plain colored' },
@@ -115,7 +114,7 @@ const skillItems = {
 const skills_es: SkillCategory[] = [
   {
     name: 'Frontend',
-    description: 'Construyo interfaces modernas y reactivas con Angular y Vue, usando TypeScript y JavaScript para garantizar un código robusto y mantenible. Complemento con HTML, SCSS y Tailwind para lograr interfaces cuidadas y adaptadas a distintos dispositivos.',
+    description: 'Construyo interfaces modernas y reactivas con Angular, usando TypeScript y JavaScript para garantizar un código robusto y mantenible. Complemento con HTML, SCSS y Tailwind para lograr interfaces cuidadas y adaptadas a distintos dispositivos.',
     skills: skillItems.frontend,
   },
   {
@@ -133,7 +132,7 @@ const skills_es: SkillCategory[] = [
 const skills_en: SkillCategory[] = [
   {
     name: 'Frontend',
-    description: 'I build modern and reactive interfaces with Angular and Vue, using TypeScript and JavaScript to ensure robust and maintainable code. I complement with HTML, SCSS and Tailwind to achieve polished, responsive interfaces.',
+    description: 'I build modern and reactive interfaces with Angular, using TypeScript and JavaScript to ensure robust and maintainable code. I complement with HTML, SCSS and Tailwind to achieve polished, responsive interfaces.',
     skills: skillItems.frontend,
   },
   {
