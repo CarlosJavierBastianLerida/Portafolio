@@ -68,10 +68,12 @@ const skillItems = {
     { name: 'Tailwind CSS', icon: 'devicon-tailwindcss-plain colored' },
   ],
   backend: [
-    { name: 'PHP',        icon: 'devicon-php-plain colored' },
-    { name: 'MySQL',      icon: 'devicon-mysql-plain colored' },
-    { name: 'PostgreSQL', icon: 'devicon-postgresql-plain colored' },
+    { name: 'PHP',     icon: 'devicon-php-plain colored' },
+    { name: 'Java',    icon: 'devicon-java-plain colored' },
+    { name: 'Python',  icon: 'devicon-python-plain colored' },
+    { name: 'MySQL',   icon: 'devicon-mysql-plain colored' },
     { name: 'SQL' },
+    { name: 'Cypress', icon: 'devicon-cypressio-plain colored' },
   ],
   tools: [
     { name: 'Git',     icon: 'devicon-git-plain colored' },
@@ -91,7 +93,7 @@ const skills_es: SkillCategory[] = [
   },
   {
     name: 'Back-end',
-    description: 'Desarrollo el lado del servidor con PHP y gestiono bases de datos relacionales con MySQL y PostgreSQL, aplicando buenas prácticas en el diseño de esquemas y la gestión de datos.',
+    description: 'Desarrollo el lado del servidor con PHP, Java y Python, gestionando bases de datos relacionales con MySQL y aplicando buenas prácticas en el diseño de esquemas. Complemento con Cypress para pruebas automatizadas que garanticen la calidad del código.',
     skills: skillItems.backend,
   },
   {
@@ -109,7 +111,7 @@ const skills_en: SkillCategory[] = [
   },
   {
     name: 'Back-end',
-    description: 'I develop the server side with PHP and manage relational databases with MySQL and PostgreSQL, applying best practices in schema design and data management.',
+    description: 'I develop the server side with PHP, Java and Python, managing relational databases with MySQL and applying best practices in schema design. I complement this with Cypress for automated testing to ensure code quality.',
     skills: skillItems.backend,
   },
   {

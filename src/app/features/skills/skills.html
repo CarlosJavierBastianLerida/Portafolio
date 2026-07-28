@@ -8,14 +8,14 @@
       <div class="section-divider"></div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
       @for (category of t().skills.categories; track category.name; let ci = $index) {
         <div animateOnScroll [style.transition-delay]="ci * 150 + 'ms'">
           <p class="font-code text-xs text-slate-600 tracking-widest uppercase mb-3">
             {{ category.name }}
           </p>
           <p class="text-slate-500 text-xs leading-relaxed mb-5">{{ category.description }}</p>
-          <div class="grid grid-cols-2 gap-2">
+          <div class="grid grid-cols-1 gap-2">
             @for (skill of category.skills; track skill.name) {
               <div class="skill-card flex items-center gap-3 px-4 py-3 rounded-xl">
                 @if (skill.icon) {
@@ -26,7 +26,7 @@
                     {{ skill.name.charAt(0) }}
                   </span>
                 }
-                <span class="text-sm text-slate-400 truncate">{{ skill.name }}</span>
+                <span class="text-sm text-slate-400 whitespace-nowrap">{{ skill.name }}</span>
               </div>
             }
           </div>
