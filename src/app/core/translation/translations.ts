@@ -129,6 +129,13 @@ const experience_es: ExperienceItem[] = [
     to: 'Disponibilidad inmediata',
     description: 'Técnico Superior en Desarrollo de Aplicaciones Web (DAW) con experiencia práctica en desarrollo full-stack a través de proyectos propios en producción, incluyendo una aplicación SaaS completa (diseño, desarrollo y despliegue).',
   },
+  {
+    company: 'Elimco Aerospace · Sintersa',
+    role: 'Fabricador Eléctrico Aeronáutico',
+    from: '2013',
+    to: '2018',
+    description: 'Más de 6 años de experiencia como fabricador eléctrico aeronáutico certificado por CTI y Airbus Group, fabricando mazos eléctricos para Airbus A330, A400M y Eurocopter EC665. Experiencia internacional en Hermosillo (México) y Hamburgo (Alemania), formación y liderazgo de un equipo de producción, y aplicación de normativas aeronáuticas estrictas (AS9100, estándares Airbus).',
+  },
 ];
 
 const experience_en: ExperienceItem[] = [
@@ -138,6 +145,13 @@ const experience_en: ExperienceItem[] = [
     from: '',
     to: 'Immediate availability',
     description: 'Higher Technical Degree in Web Application Development (DAW) with hands-on full-stack experience through my own production projects, including a complete SaaS application (design, development and deployment).',
+  },
+  {
+    company: 'Elimco Aerospace · Sintersa',
+    role: 'Aircraft Electrical Wiring Technician',
+    from: '2013',
+    to: '2018',
+    description: 'Over 6 years of experience as a certified aircraft electrical wiring technician (CTI and Airbus Group certified), building wiring harnesses for the Airbus A330, A400M and Eurocopter EC665. International experience in Hermosillo (Mexico) and Hamburg (Germany), production team training and leadership, and strict adherence to aeronautical standards (AS9100, Airbus standards).',
   },
 ];
 
