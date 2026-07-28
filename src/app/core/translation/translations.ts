@@ -130,11 +130,25 @@ const experience_es: ExperienceItem[] = [
     description: 'Técnico Superior en Desarrollo de Aplicaciones Web (DAW) con experiencia práctica en desarrollo full-stack a través de proyectos propios en producción, incluyendo una aplicación SaaS completa (diseño, desarrollo y despliegue).',
   },
   {
+    company: 'Pike Bike · Decathlon · Herba Ricemills',
+    role: 'Otras experiencias profesionales',
+    from: '2020',
+    to: '2025',
+    description: 'Distintos trabajos compatibilizados con mi etapa de formación: taller de bicicletas propio como autónomo, mecánico de bicicletas en Decathlon y operario de producción en Herba Ricemills. Me aportaron adaptabilidad, trato directo con clientes y capacidad de trabajo en entornos operativos exigentes.',
+  },
+  {
     company: 'Elimco Aerospace · Sintersa',
     role: 'Fabricador Eléctrico Aeronáutico',
     from: '2013',
     to: '2018',
     description: 'Más de 6 años de experiencia como fabricador eléctrico aeronáutico certificado por CTI y Airbus Group, fabricando mazos eléctricos para Airbus A330, A400M y Eurocopter EC665. Experiencia internacional en Hermosillo (México) y Hamburgo (Alemania), formación y liderazgo de un equipo de producción, y aplicación de normativas aeronáuticas estrictas (AS9100, estándares Airbus).',
+  },
+  {
+    company: 'I.E.S. Atenea, Mairena del Aljarafe (Sevilla)',
+    role: 'Grado Medio — Técnico en Equipos e Instalaciones Electrotécnicas',
+    from: '2001',
+    to: '2004',
+    description: 'Formación técnica de base en electricidad e instalaciones electrotécnicas, punto de partida de mi posterior especialización en fabricación eléctrica aeronáutica.',
   },
 ];
 
@@ -147,11 +161,25 @@ const experience_en: ExperienceItem[] = [
     description: 'Higher Technical Degree in Web Application Development (DAW) with hands-on full-stack experience through my own production projects, including a complete SaaS application (design, development and deployment).',
   },
   {
+    company: 'Pike Bike · Decathlon · Herba Ricemills',
+    role: 'Other professional experience',
+    from: '2020',
+    to: '2025',
+    description: "Various jobs combined with my training period: my own bike repair shop as a freelancer, bike mechanic at Decathlon, and production operator at Herba Ricemills. These roles gave me adaptability, direct customer interaction, and the ability to work in demanding operational environments.",
+  },
+  {
     company: 'Elimco Aerospace · Sintersa',
     role: 'Aircraft Electrical Wiring Technician',
     from: '2013',
     to: '2018',
     description: 'Over 6 years of experience as a certified aircraft electrical wiring technician (CTI and Airbus Group certified), building wiring harnesses for the Airbus A330, A400M and Eurocopter EC665. International experience in Hermosillo (Mexico) and Hamburg (Germany), production team training and leadership, and strict adherence to aeronautical standards (AS9100, Airbus standards).',
+  },
+  {
+    company: 'I.E.S. Atenea, Mairena del Aljarafe (Sevilla)',
+    role: 'Technical Degree — Electrical Systems and Installations Technician',
+    from: '2001',
+    to: '2004',
+    description: 'Foundational technical training in electrical systems and installations, the starting point for my later specialization in aeronautical electrical manufacturing.',
   },
 ];
 
