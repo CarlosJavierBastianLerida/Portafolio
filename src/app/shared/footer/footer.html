@@ -6,9 +6,9 @@
     </p>
 
     <nav class="flex items-center gap-5">
-      <a href="#" class="font-code text-xs text-slate-700 hover:text-slate-400 transition-colors">{{ t().footer.privacy }}</a>
-      <a href="#" class="font-code text-xs text-slate-700 hover:text-slate-400 transition-colors">{{ t().footer.cookies }}</a>
-      <a href="#" class="font-code text-xs text-slate-700 hover:text-slate-400 transition-colors">{{ t().footer.legal }}</a>
+      <button type="button" (click)="openDoc('privacy')" class="font-code text-xs text-slate-700 hover:text-slate-400 transition-colors">{{ t().footer.privacy }}</button>
+      <button type="button" (click)="openDoc('cookies')" class="font-code text-xs text-slate-700 hover:text-slate-400 transition-colors">{{ t().footer.cookies }}</button>
+      <button type="button" (click)="openDoc('notice')" class="font-code text-xs text-slate-700 hover:text-slate-400 transition-colors">{{ t().footer.legal }}</button>
     </nav>
 
     <p class="font-code text-xs text-slate-700">
@@ -16,4 +16,6 @@
     </p>
 
   </div>
+
+  <app-legal-modal [doc]="activeDoc()" [closeLabel]="t().legal.close" (closed)="closeDoc()" />
 </footer>

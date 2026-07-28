@@ -8,6 +8,17 @@ export interface Project {
   demo: string;
 }
 
+export interface LegalSection {
+  heading: string;
+  paragraphs: string[];
+}
+
+export interface LegalDoc {
+  title: string;
+  updated: string;
+  sections: LegalSection[];
+}
+
 export interface ExperienceItem {
   company: string;
   role: string;
@@ -157,6 +168,246 @@ const experience_en: ExperienceItem[] = [
   },
 ];
 
+const legal_es = {
+  notice: {
+    title: 'Aviso Legal',
+    updated: 'Última actualización: julio de 2026',
+    sections: [
+      {
+        heading: 'Identificación del titular',
+        paragraphs: [
+          'En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa que el titular de este sitio web es Carlos Javier Bastian Lérida, con dirección de contacto carlosbastianlerida@gmail.com.',
+          'Este sitio web tiene carácter personal y profesional, y no desarrolla actividad de comercio electrónico.',
+        ],
+      },
+      {
+        heading: 'Objeto',
+        paragraphs: [
+          'Este sitio web tiene como finalidad mostrar el perfil profesional, los proyectos y el trabajo del titular, así como facilitar un canal de contacto para propuestas laborales o profesionales.',
+        ],
+      },
+      {
+        heading: 'Propiedad intelectual',
+        paragraphs: [
+          'Los contenidos de este sitio web (textos, código fuente, diseño e imágenes), salvo que se indique lo contrario, son propiedad del titular o se utilizan con la debida autorización. Queda prohibida su reproducción total o parcial sin consentimiento expreso.',
+        ],
+      },
+      {
+        heading: 'Enlaces a terceros',
+        paragraphs: [
+          'Este sitio incluye enlaces a plataformas de terceros (GitHub, LinkedIn, demos de proyectos). El titular no se hace responsable del contenido ni de las políticas de privacidad de dichos sitios.',
+        ],
+      },
+      {
+        heading: 'Legislación aplicable',
+        paragraphs: [
+          'Para cualquier controversia derivada del uso de este sitio web será de aplicación la legislación española.',
+        ],
+      },
+    ],
+  },
+  privacy: {
+    title: 'Política de Privacidad',
+    updated: 'Última actualización: julio de 2026',
+    sections: [
+      {
+        heading: 'Responsable del tratamiento',
+        paragraphs: ['Carlos Javier Bastian Lérida — carlosbastianlerida@gmail.com'],
+      },
+      {
+        heading: '¿Qué datos se recogen?',
+        paragraphs: [
+          'Este sitio web no utiliza cookies de seguimiento ni identifica a los visitantes de forma individual. Los únicos datos personales que se tratan son los que el usuario facilita voluntariamente al rellenar el formulario de contacto: nombre, dirección de correo electrónico y el contenido del mensaje. Adicionalmente, se recogen estadísticas de visitas totalmente anónimas y agregadas a través de Vercel Analytics (ver más abajo).',
+        ],
+      },
+      {
+        heading: 'Finalidad',
+        paragraphs: [
+          'Los datos se utilizan exclusivamente para responder a la consulta o solicitud de contacto planteada por el usuario.',
+        ],
+      },
+      {
+        heading: 'Legitimación',
+        paragraphs: [
+          'La base legal del tratamiento es el consentimiento del usuario, otorgado libremente al enviar el formulario de contacto.',
+        ],
+      },
+      {
+        heading: 'Encargados del tratamiento y transferencias',
+        paragraphs: [
+          'Para gestionar el envío del formulario se utiliza el servicio EmailJS, un proveedor externo que actúa como encargado del tratamiento. Puede consultarse su política de privacidad en emailjs.com.',
+          'Este sitio también carga tipografías desde los servidores de Google Fonts, lo que implica el envío de la dirección IP del visitante a Google LLC en el momento de cargar la página.',
+          'Este sitio utiliza Vercel Analytics para obtener estadísticas de tráfico agregadas y anónimas. Este servicio no identifica a los visitantes ni utiliza cookies. Más información en vercel.com/legal/privacy-policy.',
+        ],
+      },
+      {
+        heading: 'Conservación de los datos',
+        paragraphs: [
+          'Los mensajes recibidos a través del formulario se gestionan directamente en la bandeja de correo del titular; este sitio web no almacena los datos en ninguna base de datos propia.',
+        ],
+      },
+      {
+        heading: 'Derechos del usuario',
+        paragraphs: [
+          'El usuario puede ejercer sus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad escribiendo a carlosbastianlerida@gmail.com.',
+        ],
+      },
+    ],
+  },
+  cookies: {
+    title: 'Política de Cookies',
+    updated: 'Última actualización: julio de 2026',
+    sections: [
+      {
+        heading: '¿Qué son las cookies?',
+        paragraphs: [
+          'Las cookies son pequeños archivos que un sitio web puede instalar en el navegador del visitante para almacenar información.',
+        ],
+      },
+      {
+        heading: 'Cookies utilizadas en este sitio',
+        paragraphs: [
+          'Este sitio web no instala cookies propias ni de terceros con fines analíticos, publicitarios o de seguimiento.',
+        ],
+      },
+      {
+        heading: 'Analítica sin cookies',
+        paragraphs: [
+          'Se utiliza Vercel Analytics para obtener estadísticas agregadas y anónimas de visitas (por ejemplo, páginas más vistas o país de origen aproximado). Este servicio no instala cookies, no utiliza identificadores persistentes y no permite reconocer a un visitante concreto entre distintas visitas, por lo que no requiere solicitar consentimiento previo.',
+        ],
+      },
+      {
+        heading: 'Recursos externos',
+        paragraphs: [
+          'Para el correcto funcionamiento visual del sitio se cargan recursos de terceros (tipografías de Google Fonts e iconos desde jsDelivr). Estos servicios no instalan cookies desde este sitio, pero pueden registrar la dirección IP del visitante como parte del funcionamiento técnico de sus redes de distribución de contenido (CDN).',
+        ],
+      },
+      {
+        heading: 'Cambios en esta política',
+        paragraphs: [
+          'Si en el futuro se incorporase alguna cookie no esencial o de seguimiento, esta política se actualizará y se solicitará el consentimiento del usuario mediante el correspondiente aviso.',
+        ],
+      },
+    ],
+  },
+};
+
+const legal_en = {
+  notice: {
+    title: 'Legal Notice',
+    updated: 'Last updated: July 2026',
+    sections: [
+      {
+        heading: 'Site owner identification',
+        paragraphs: [
+          'In compliance with Spanish Law 34/2002 on Information Society Services and Electronic Commerce (LSSI-CE), the owner of this website is Carlos Javier Bastian Lérida, contact address carlosbastianlerida@gmail.com.',
+          'This website is personal and professional in nature and does not carry out e-commerce activity.',
+        ],
+      },
+      {
+        heading: 'Purpose',
+        paragraphs: [
+          "This website's purpose is to showcase the owner's professional profile, projects and work, and to provide a contact channel for job or professional proposals.",
+        ],
+      },
+      {
+        heading: 'Intellectual property',
+        paragraphs: [
+          'The content of this website (text, source code, design and images), unless stated otherwise, is owned by the site owner or used under proper authorization. Reproduction, in whole or in part, without express consent is prohibited.',
+        ],
+      },
+      {
+        heading: 'Third-party links',
+        paragraphs: [
+          'This site includes links to third-party platforms (GitHub, LinkedIn, project demos). The owner is not responsible for the content or privacy policies of those sites.',
+        ],
+      },
+      {
+        heading: 'Applicable law',
+        paragraphs: ['Spanish law applies to any dispute arising from the use of this website.'],
+      },
+    ],
+  },
+  privacy: {
+    title: 'Privacy Policy',
+    updated: 'Last updated: July 2026',
+    sections: [
+      {
+        heading: 'Data controller',
+        paragraphs: ['Carlos Javier Bastian Lérida — carlosbastianlerida@gmail.com'],
+      },
+      {
+        heading: 'What data is collected?',
+        paragraphs: [
+          'This website does not use tracking cookies and does not identify visitors individually. The only personal data processed is what the user voluntarily provides through the contact form: name, email address and message content. Additionally, fully anonymous, aggregated visit statistics are collected through Vercel Analytics (see below).',
+        ],
+      },
+      {
+        heading: 'Purpose',
+        paragraphs: ['The data is used solely to respond to the inquiry or contact request submitted by the user.'],
+      },
+      {
+        heading: 'Legal basis',
+        paragraphs: ['The legal basis for processing is the consent freely given by the user when submitting the contact form.'],
+      },
+      {
+        heading: 'Processors and transfers',
+        paragraphs: [
+          "The EmailJS service is used to handle form submissions, acting as a data processor. Its privacy policy can be found at emailjs.com.",
+          "This site also loads fonts from Google Fonts servers, which involves sending the visitor's IP address to Google LLC when the page loads.",
+          'This site uses Vercel Analytics to collect aggregated, anonymous traffic statistics. This service does not identify visitors or use cookies. More information at vercel.com/legal/privacy-policy.',
+        ],
+      },
+      {
+        heading: 'Data retention',
+        paragraphs: [
+          "Messages received through the form are handled directly in the owner's mailbox; this website does not store the data in any database of its own.",
+        ],
+      },
+      {
+        heading: 'User rights',
+        paragraphs: [
+          'Users may exercise their rights of access, rectification, erasure, objection, restriction of processing and portability by writing to carlosbastianlerida@gmail.com.',
+        ],
+      },
+    ],
+  },
+  cookies: {
+    title: 'Cookie Policy',
+    updated: 'Last updated: July 2026',
+    sections: [
+      {
+        heading: 'What are cookies?',
+        paragraphs: ['Cookies are small files that a website can store on a visitor’s browser to save information.'],
+      },
+      {
+        heading: 'Cookies used on this site',
+        paragraphs: [
+          'This website does not set first-party or third-party cookies for analytics, advertising or tracking purposes.',
+        ],
+      },
+      {
+        heading: 'Cookieless analytics',
+        paragraphs: [
+          'Vercel Analytics is used to collect aggregated, anonymous visit statistics (e.g. most viewed pages or approximate country of origin). This service does not set cookies, does not use persistent identifiers, and does not allow recognizing a specific visitor across different visits, so no prior consent is required.',
+        ],
+      },
+      {
+        heading: 'External resources',
+        paragraphs: [
+          "For the site's visual functionality, third-party resources are loaded (Google Fonts typefaces and jsDelivr-hosted icons). These services do not set cookies from this site, but may log the visitor's IP address as part of the technical operation of their content delivery networks (CDN).",
+        ],
+      },
+      {
+        heading: 'Changes to this policy',
+        paragraphs: [
+          'If any non-essential or tracking cookie is introduced in the future, this policy will be updated and user consent will be requested through the corresponding notice.',
+        ],
+      },
+    ],
+  },
+};
+
 export const translations = {
   es: {
     nav: {
@@ -228,6 +479,10 @@ export const translations = {
       cookies: 'Cookies',
       legal: 'Aviso legal',
     },
+    legal: {
+      ...legal_es,
+      close: 'Cerrar',
+    },
   },
   en: {
     nav: {
@@ -298,6 +553,10 @@ export const translations = {
       privacy: 'Privacy',
       cookies: 'Cookies',
       legal: 'Legal notice',
+    },
+    legal: {
+      ...legal_en,
+      close: 'Close',
     },
   },
 };
