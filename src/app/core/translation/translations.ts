@@ -29,11 +29,11 @@ export interface SkillCategory {
 
 const projects_es: Project[] = [
   {
-    title: 'Proyecto 1',
-    description: 'Descripción del proyecto. Explica qué problema resuelve y las decisiones técnicas más importantes que tomaste.',
-    tags: ['Angular', 'TypeScript', 'PostgreSQL'],
-    github: '#',
-    demo: '#',
+    title: 'ConnectingDevs',
+    description: 'Red social para desarrolladores. SPA en Angular que consume una API de Laravel con autenticación por sesión (Sanctum), cookies y protección CSRF, sin tokens en localStorage. Incluye feed con posts, comentarios, likes y follows, perfiles públicos y editables, rutas protegidas con guards, y una sección de administración de cuentas cubierta con tests E2E en Cypress.',
+    tags: ['Angular', 'TypeScript', 'Laravel Sanctum', 'Cypress'],
+    github: 'https://github.com/ConnectingDevs/ConnectingDevs-Frontend',
+    demo: 'https://devconnect-free.vercel.app',
   },
   {
     title: 'Proyecto 2',
@@ -53,11 +53,11 @@ const projects_es: Project[] = [
 
 const projects_en: Project[] = [
   {
-    title: 'Project 1',
-    description: 'Project description. Explain what problem it solves and the most important technical decisions you made.',
-    tags: ['Angular', 'TypeScript', 'PostgreSQL'],
-    github: '#',
-    demo: '#',
+    title: 'ConnectingDevs',
+    description: 'Developer-focused social network. Angular SPA consuming a Laravel API with session-based authentication (Sanctum), cookies and CSRF protection, no tokens in localStorage. Includes a feed with posts, comments, likes and follows, editable public/own profiles, guard-protected routes, and an account management section covered by Cypress E2E tests.',
+    tags: ['Angular', 'TypeScript', 'Laravel Sanctum', 'Cypress'],
+    github: 'https://github.com/ConnectingDevs/ConnectingDevs-Frontend',
+    demo: 'https://devconnect-free.vercel.app',
   },
   {
     title: 'Project 2',
