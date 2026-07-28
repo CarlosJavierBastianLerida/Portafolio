@@ -46,20 +46,6 @@ const projects_es: Project[] = [
     github: 'https://github.com/ConnectingDevs/ConnectingDevs-Frontend',
     demo: 'https://devconnect-free.vercel.app',
   },
-  {
-    title: 'Proyecto 2',
-    description: 'Descripción del proyecto. Explica qué problema resuelve y las decisiones técnicas más importantes que tomaste.',
-    tags: ['Angular', 'Node.js', 'MySQL'],
-    github: '#',
-    demo: '#',
-  },
-  {
-    title: 'Proyecto 3',
-    description: 'Descripción del proyecto. Explica qué problema resuelve y las decisiones técnicas más importantes que tomaste.',
-    tags: ['TypeScript', 'REST API', 'SQL'],
-    github: '#',
-    demo: '#',
-  },
 ];
 
 const projects_en: Project[] = [
@@ -69,20 +55,6 @@ const projects_en: Project[] = [
     tags: ['Angular', 'TypeScript', 'Laravel Sanctum', 'Cypress'],
     github: 'https://github.com/ConnectingDevs/ConnectingDevs-Frontend',
     demo: 'https://devconnect-free.vercel.app',
-  },
-  {
-    title: 'Project 2',
-    description: 'Project description. Explain what problem it solves and the most important technical decisions you made.',
-    tags: ['Angular', 'Node.js', 'MySQL'],
-    github: '#',
-    demo: '#',
-  },
-  {
-    title: 'Project 3',
-    description: 'Project description. Explain what problem it solves and the most important technical decisions you made.',
-    tags: ['TypeScript', 'REST API', 'SQL'],
-    github: '#',
-    demo: '#',
   },
 ];
 
