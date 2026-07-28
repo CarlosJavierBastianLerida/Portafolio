@@ -399,8 +399,9 @@ export const translations = {
     },
     about: {
       title: 'Sobre mí',
-      bio1: 'Soy desarrollador web en formación, especializado en el desarrollo de aplicaciones tanto en el lado del cliente como del servidor. Trabajo con Angular y Vue para la construcción de interfaces modernas y reactivas, combinando TypeScript y JavaScript para garantizar un código robusto y mantenible.',
-      bio2: 'En el ámbito del back-end, tengo experiencia con PHP y bases de datos relacionales como MySQL, aplicando buenas prácticas en el diseño de esquemas y la gestión de datos. Me interesa el código limpio, los patrones de diseño y seguir creciendo como profesional dentro del sector.',
+      bio1: 'Desarrollador full-stack con Técnico Superior en Desarrollo de Aplicaciones Web (DAW), con experiencia construyendo aplicaciones completas, desde la interfaz hasta la base de datos.',
+      bio2: 'En el front-end trabajo con Angular, combinando TypeScript y JavaScript para crear interfaces reactivas y mantenibles. En el back-end desarrollo APIs y lógica de negocio con PHP y Java, con bases de datos relacionales como MySQL, aplicando buenas prácticas de diseño de esquemas. Complemento el desarrollo con pruebas automatizadas (Cypress) para asegurar la calidad del código.',
+      bio3: 'Actualmente estoy desarrollando FluyQo, una aplicación en producción que abarca todo el ciclo: diseño, desarrollo y despliegue. Además, sigo ampliando mi formación de forma continua: estoy profundizando en Angular y próximamente comenzaré con React, para tener una visión más completa del ecosistema frontend actual. Me interesa el código limpio y los patrones de diseño, y busco mi primera oportunidad profesional donde pueda aportar valor desde el primer día.',
     },
     projects: {
       title: 'Proyectos',
@@ -474,8 +475,9 @@ export const translations = {
     },
     about: {
       title: 'About me',
-      bio1: "I'm a web developer in training, specialized in both client-side and server-side application development. I work with Angular and Vue to build modern and reactive interfaces, combining TypeScript and JavaScript to ensure robust and maintainable code.",
-      bio2: 'On the back-end side, I have experience with PHP and relational databases like MySQL, applying best practices in schema design and data management. I care about clean code, design patterns, and continuing to grow as a professional in the web development field.',
+      bio1: 'Full-stack developer with a Higher Technical Degree in Web Application Development (DAW), with experience building complete applications, from the interface down to the database.',
+      bio2: "On the front-end I work with Angular, combining TypeScript and JavaScript to build reactive, maintainable interfaces. On the back-end I build APIs and business logic with PHP and Java, with relational databases like MySQL, applying good schema design practices. I complement development with automated testing (Cypress) to ensure code quality.",
+      bio3: "I'm currently developing FluyQo, a production application spanning the full cycle: design, development and deployment. I'm also continuously expanding my training, deepening my Angular skills and soon starting with React, to get a fuller picture of today's front-end ecosystem. I care about clean code and design patterns, and I'm looking for my first professional opportunity where I can add value from day one.",
     },
     projects: {
       title: 'Projects',
