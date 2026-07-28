@@ -13,8 +13,9 @@
 
     <div animateOnScroll class="flex flex-col sm:flex-row items-center justify-center gap-3">
 
-      <a
-        href="mailto:carlosbastianlerida@gmail.com"
+      <button
+        type="button"
+        (click)="openModal()"
         class="font-code text-sm w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 rounded-lg text-white font-medium transition-all duration-200 hover:opacity-90 hover:-translate-y-px"
         style="background: linear-gradient(135deg, #06b6d4, #818cf8);">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -22,7 +23,7 @@
             d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
         </svg>
         {{ t().contact.emailLabel }}
-      </a>
+      </button>
 
       <a
         href="https://www.linkedin.com/in/carlosbastianlerida"
@@ -48,4 +49,6 @@
 
     </div>
   </div>
+
+  <app-contact-modal [open]="isModalOpen()" (closed)="closeModal()" />
 </section>
