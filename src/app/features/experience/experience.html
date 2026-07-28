@@ -8,13 +8,15 @@
     </div>
 
     <div class="space-y-4">
-      @for (item of t().experience.items; track item.company; let i = $index) {
+      @for (item of t().experience.items; track item.role; let i = $index) {
         <article animateOnScroll [style.transition-delay]="i * 100 + 'ms'" class="card rounded-xl p-6">
 
           <div class="flex flex-wrap items-start justify-between gap-3 mb-3">
             <div>
               <h3 class="text-base font-semibold text-slate-100">{{ item.role }}</h3>
-              <p class="text-sm gradient-text font-medium mt-0.5">{{ item.company }}</p>
+              @if (item.company) {
+                <p class="text-sm gradient-text font-medium mt-0.5">{{ item.company }}</p>
+              }
             </div>
             <span class="font-code text-xs px-3 py-1 rounded-md"
               style="background: rgba(34,211,238,0.06); color: #67e8f9; border: 1px solid rgba(34,211,238,0.15);">

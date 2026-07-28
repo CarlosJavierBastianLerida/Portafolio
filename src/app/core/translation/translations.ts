@@ -121,7 +121,7 @@ const skills_en: SkillCategory[] = [
 
 const experience_es: ExperienceItem[] = [
   {
-    company: 'FluyQo',
+    company: '',
     role: 'En búsqueda de mi primera oportunidad profesional',
     from: '',
     to: 'Disponibilidad inmediata',
@@ -131,7 +131,7 @@ const experience_es: ExperienceItem[] = [
 
 const experience_en: ExperienceItem[] = [
   {
-    company: 'FluyQo',
+    company: '',
     role: 'Looking for my first professional opportunity',
     from: '',
     to: 'Immediate availability',
