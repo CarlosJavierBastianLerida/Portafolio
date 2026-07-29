@@ -527,9 +527,9 @@ export const translations = {
     },
     about: {
       title: 'Sobre mí',
-      bio1: 'Desarrollador full-stack con Técnico Superior en Desarrollo de Aplicaciones Web (DAW), con experiencia construyendo aplicaciones completas, desde la interfaz hasta la base de datos.',
-      bio2: 'En el front-end trabajo con Angular, combinando TypeScript y JavaScript para crear interfaces reactivas y mantenibles. En el back-end desarrollo APIs y lógica de negocio con PHP y Java, con bases de datos relacionales como MySQL, aplicando buenas prácticas de diseño de esquemas. Complemento el desarrollo con pruebas automatizadas (Cypress) para asegurar la calidad del código.',
-      bio3: 'Actualmente estoy desarrollando FluyQo, una aplicación en producción que abarca todo el ciclo: diseño, desarrollo y despliegue. Además, sigo ampliando mi formación de forma continua: estoy profundizando en Angular y próximamente comenzaré con React, para tener una visión más completa del ecosistema frontend actual. Me interesa el código limpio y los patrones de diseño, y busco mi primera oportunidad profesional donde pueda aportar valor desde el primer día.',
+      bio1: 'Desarrollador full-stack con Técnico Superior en Desarrollo de Aplicaciones Web (DAW). Construyo aplicaciones completas, desde la interfaz hasta la base de datos.',
+      bio2: 'En el front-end trabajo con Angular, combinando TypeScript y JavaScript para crear interfaces reactivas y mantenibles. En el back-end desarrollo APIs y lógica de negocio con PHP, con bases de datos relacionales como MySQL, aplicando buenas prácticas de diseño de esquemas. Complemento el desarrollo con pruebas automatizadas (Cypress) para asegurar la calidad del código.',
+      bio3: 'Actualmente desarrollo FluyQo, una aplicación en producción que abarco de principio a fin: diseño, desarrollo y despliegue. Sigo ampliando mi formación de forma continua, profundizando en Angular y explorando el ecosistema frontend más amplio. Me interesa el código limpio y los patrones de diseño, y aporto además una base de 6 años de experiencia profesional certificada en fabricación electrónica de precisión (sector aeronáutico), lo que me da disciplina, rigor y capacidad de trabajo en entornos exigentes.',
     },
     projects: {
       title: 'Proyectos',
