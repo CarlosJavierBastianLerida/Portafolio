@@ -91,7 +91,6 @@ const skillItems = {
   ],
   backend: [
     { name: 'PHP',     icon: 'devicon-php-plain colored' },
-    { name: 'Java',    icon: 'devicon-java-plain colored' },
     { name: 'Python',  icon: 'devicon-python-plain colored' },
     { name: 'MySQL',   icon: 'devicon-mysql-plain colored' },
     { name: 'SQL' },
@@ -115,7 +114,7 @@ const skills_es: SkillCategory[] = [
   },
   {
     name: 'Back-end',
-    description: 'Desarrollo el lado del servidor con PHP, Java y Python, gestionando bases de datos relacionales con MySQL y aplicando buenas prácticas en el diseño de esquemas. Complemento con Cypress para pruebas automatizadas que garanticen la calidad del código.',
+    description: 'Desarrollo el lado del servidor con PHP y Python, gestionando bases de datos relacionales con MySQL y aplicando buenas prácticas en el diseño de esquemas. Complemento con Cypress para pruebas automatizadas que garanticen la calidad del código.',
     skills: skillItems.backend,
   },
   {
@@ -133,7 +132,7 @@ const skills_en: SkillCategory[] = [
   },
   {
     name: 'Back-end',
-    description: 'I develop the server side with PHP, Java and Python, managing relational databases with MySQL and applying best practices in schema design. I complement this with Cypress for automated testing to ensure code quality.',
+    description: 'I develop the server side with PHP and Python, managing relational databases with MySQL and applying best practices in schema design. I complement this with Cypress for automated testing to ensure code quality.',
     skills: skillItems.backend,
   },
   {
