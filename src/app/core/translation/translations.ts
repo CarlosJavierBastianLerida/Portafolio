@@ -27,6 +27,14 @@ export interface ExperienceItem {
   description: string;
 }
 
+export interface EducationItem {
+  institution: string;
+  title: string;
+  from: string;
+  to: string;
+  description: string;
+}
+
 export interface Skill {
   name: string;
   icon?: string;
@@ -46,6 +54,13 @@ const projects_es: Project[] = [
     github: 'https://github.com/ConnectingDevs/ConnectingDevs-Frontend',
     demo: 'https://devconnect-free.vercel.app',
   },
+  {
+    title: 'FluyQo',
+    description: 'SaaS multi-tenant para la gestión integral de academias de artes marciales, yoga, pilates y centros de bienestar. Backend en Laravel 12 con autenticación Sanctum y multi-tenancy real (base de datos independiente por academia), frontend con Vue 3 e Inertia.js. Gestiona alumnos, pagos, programas y progresión por cinturones. Cubierto por una suite de tests completa: 251 tests con PHPUnit, 41 con Vitest y 24 end-to-end con Playwright.',
+    tags: ['Laravel', 'Vue', 'Inertia.js', 'PHP', 'Playwright'],
+    github: '',
+    demo: '',
+  },
 ];
 
 const projects_en: Project[] = [
@@ -55,6 +70,13 @@ const projects_en: Project[] = [
     tags: ['Angular', 'TypeScript', 'Laravel Sanctum', 'Cypress'],
     github: 'https://github.com/ConnectingDevs/ConnectingDevs-Frontend',
     demo: 'https://devconnect-free.vercel.app',
+  },
+  {
+    title: 'FluyQo',
+    description: 'Multi-tenant SaaS for managing martial arts academies, yoga, pilates and wellness centers end-to-end. Laravel 12 backend with Sanctum authentication and real multi-tenancy (a separate database per academy), Vue 3 + Inertia.js frontend. Manages students, payments, programs and belt/rank progression. Covered by a full test suite: 251 PHPUnit tests, 41 with Vitest, and 24 end-to-end with Playwright.',
+    tags: ['Laravel', 'Vue', 'Inertia.js', 'PHP', 'Playwright'],
+    github: '',
+    demo: '',
   },
 ];
 
@@ -127,7 +149,7 @@ const experience_es: ExperienceItem[] = [
     role: 'En búsqueda de mi primera oportunidad profesional',
     from: '',
     to: 'Disponibilidad inmediata',
-    description: 'Técnico Superior en Desarrollo de Aplicaciones Web (DAW) con experiencia práctica en desarrollo full-stack a través de proyectos propios en producción, incluyendo una aplicación SaaS completa (diseño, desarrollo y despliegue).',
+    description: 'Técnico Superior en DAW con experiencia práctica en desarrollo full-stack a través de proyectos propios en producción, incluyendo una aplicación SaaS completa (diseño, desarrollo y despliegue).',
   },
   {
     company: 'Pike Bike · Decathlon · Herba Ricemills',
@@ -137,36 +159,46 @@ const experience_es: ExperienceItem[] = [
     description: 'Distintos trabajos compatibilizados con mi etapa de formación: taller de bicicletas propio como autónomo, mecánico de bicicletas en Decathlon y operario de producción en Herba Ricemills. Me aportaron adaptabilidad, trato directo con clientes y capacidad de trabajo en entornos operativos exigentes.',
   },
   {
-    company: 'Bici con Alas, Madrid',
-    role: 'Curso de Mecánico de Bicicletas',
+    company: 'Elimco Aerospace · Sevilla, Hamburgo (DE), Hermosillo (MX)',
+    role: 'Fabricador Eléctrico Aeronáutico',
+    from: '2013',
+    to: '2017',
+    description: 'Más de 6 años de experiencia profesional en un sector de tolerancia cero a errores, incluyendo formación y liderazgo de un equipo de producción en México, y trabajo en Alemania bajo estándares aeronáuticos estrictos. Esta experiencia me aportó disciplina, rigor documental, adaptabilidad a equipos y culturas distintas, y capacidad de trabajo bajo presión — cualidades que aplico directamente al desarrollo de software: pruebas exhaustivas, documentación clara y responsabilidad sobre el resultado final.',
+  },
+];
+
+const education_es: EducationItem[] = [
+  {
+    title: 'Técnico Superior en Desarrollo de Aplicaciones Web (DAW)',
+    institution: 'FOC Granada',
+    from: '2024',
+    to: '2026',
+    description: 'Formación en HTML, CSS, JavaScript, PHP, Angular, MySQL y Cypress. Certificación en JavaScript Essentials 1.',
+  },
+  {
+    title: 'Curso de Mecánico de Bicicletas',
+    institution: 'Bici con Alas, Madrid',
     from: '',
     to: '2019',
     description: 'Formación como mecánico de bicicletas, incluyendo prácticas, que sentó las bases técnicas para mi posterior etapa como responsable de taller propio y en Decathlon.',
   },
   {
-    company: 'Elimco Aerospace · Sintersa',
-    role: 'Fabricador Eléctrico Aeronáutico',
-    from: '2013',
-    to: '2018',
-    description: 'Más de 6 años de experiencia como fabricador eléctrico aeronáutico certificado por CTI y Airbus Group, fabricando mazos eléctricos para Airbus A330, A400M y Eurocopter EC665. Experiencia internacional en Hermosillo (México) y Hamburgo (Alemania), formación y liderazgo de un equipo de producción, y aplicación de normativas aeronáuticas estrictas (AS9100, estándares Airbus).',
-  },
-  {
-    company: 'Airbus Group · CTI',
-    role: 'Homologación en Fabricación Eléctrica Aeronáutica',
+    title: 'Homologación en Fabricación Eléctrica Aeronáutica',
+    institution: 'Airbus Group · CTI',
     from: '',
     to: '2016',
     description: 'Homologación oficial por CTI y Airbus Group en fabricación eléctrica en la industria aeronáutica, obtenida durante mi etapa en Elimco Aerospace.',
   },
   {
-    company: 'UGT Andalucía Sevilla · Prácticas en Airbus Military (480 h)',
-    role: 'Fabricación Eléctrica en la Industria Aeronáutica (710 h)',
+    title: 'Fabricación Eléctrica en la Industria Aeronáutica (710 h)',
+    institution: 'UGT Andalucía Sevilla · Prácticas en Airbus Military (480 h)',
     from: '',
     to: '2012',
     description: 'Curso que me aportó los conocimientos y la experiencia necesarios para el montaje de mazos eléctricos y de centrales, el manejo de normativas, tablas y esquemas eléctricos aeronáuticos, y el uso de herramientas especializadas (tenazas de contactos para conectores de pin y socket, tenazas de terminales, tenazas para empalmes Raychem y soldador para soldadura eléctrica). Incluyó prácticas de empresa en Airbus Military de 480 horas de duración.',
   },
   {
-    company: 'I.E.S. Atenea, Mairena del Aljarafe (Sevilla)',
-    role: 'Grado Medio — Técnico en Equipos e Instalaciones Electrotécnicas',
+    title: 'Grado Medio — Técnico en Equipos e Instalaciones Electrotécnicas',
+    institution: 'I.E.S. Atenea, Mairena del Aljarafe (Sevilla)',
     from: '2001',
     to: '2004',
     description: 'Formación técnica de base en electricidad e instalaciones electrotécnicas, punto de partida de mi posterior especialización en fabricación eléctrica aeronáutica.',
@@ -176,10 +208,10 @@ const experience_es: ExperienceItem[] = [
 const experience_en: ExperienceItem[] = [
   {
     company: '',
-    role: 'Looking for my first professional opportunity',
+    role: 'Seeking my first professional opportunity',
     from: '',
-    to: 'Immediate availability',
-    description: 'Higher Technical Degree in Web Application Development (DAW) with hands-on full-stack experience through my own production projects, including a complete SaaS application (design, development and deployment).',
+    to: 'Available immediately',
+    description: 'Higher Technician in Web Application Development with hands-on full-stack experience through my own projects in production, including a complete SaaS application (design, development and deployment).',
   },
   {
     company: 'Pike Bike · Decathlon · Herba Ricemills',
@@ -189,36 +221,46 @@ const experience_en: ExperienceItem[] = [
     description: "Various jobs combined with my training period: my own bike repair shop as a freelancer, bike mechanic at Decathlon, and production operator at Herba Ricemills. These roles gave me adaptability, direct customer interaction, and the ability to work in demanding operational environments.",
   },
   {
-    company: 'Bici con Alas, Madrid',
-    role: 'Bicycle Mechanic Course',
+    company: 'Elimco Aerospace · Seville, Hamburg (DE), Hermosillo (MX)',
+    role: 'Aeronautical Electrical Wire Harness Technician',
+    from: '2013',
+    to: '2017',
+    description: 'Over 6 years of professional experience in a zero-tolerance-for-error industry, including training and leading a production team in Mexico, and working in Germany under strict aeronautical standards. This experience gave me discipline, rigorous documentation habits, adaptability across teams and cultures, and the ability to perform under pressure — qualities I apply directly to software development: thorough testing, clear documentation, and ownership of the final result.',
+  },
+];
+
+const education_en: EducationItem[] = [
+  {
+    title: 'Higher Technician in Web Application Development (DAW)',
+    institution: 'FOC Granada',
+    from: '2024',
+    to: '2026',
+    description: 'Training in HTML, CSS, JavaScript, PHP, Angular, MySQL and Cypress. JavaScript Essentials 1 certification.',
+  },
+  {
+    title: 'Bicycle Mechanic Course',
+    institution: 'Bici con Alas, Madrid',
     from: '',
     to: '2019',
     description: 'Training as a bicycle mechanic, including a work placement, which laid the technical groundwork for my later work running my own repair shop and at Decathlon.',
   },
   {
-    company: 'Elimco Aerospace · Sintersa',
-    role: 'Aircraft Electrical Wiring Technician',
-    from: '2013',
-    to: '2018',
-    description: 'Over 6 years of experience as a certified aircraft electrical wiring technician (CTI and Airbus Group certified), building wiring harnesses for the Airbus A330, A400M and Eurocopter EC665. International experience in Hermosillo (Mexico) and Hamburg (Germany), production team training and leadership, and strict adherence to aeronautical standards (AS9100, Airbus standards).',
-  },
-  {
-    company: 'Airbus Group · CTI',
-    role: 'Aeronautical Electrical Manufacturing Certification',
+    title: 'Aeronautical Electrical Manufacturing Certification',
+    institution: 'Airbus Group · CTI',
     from: '',
     to: '2016',
     description: 'Official certification from CTI and Airbus Group in aeronautical electrical manufacturing, obtained during my time at Elimco Aerospace.',
   },
   {
-    company: 'UGT Andalucía Sevilla · Work placement at Airbus Military (480 h)',
-    role: 'Aeronautical Electrical Manufacturing Course (710 h)',
+    title: 'Aeronautical Electrical Manufacturing Course (710 h)',
+    institution: 'UGT Andalucía Sevilla · Work placement at Airbus Military (480 h)',
     from: '',
     to: '2012',
     description: 'Course that gave me the knowledge and hands-on experience needed to assemble electrical wiring harnesses and control units, to work with aeronautical regulations, tables and wiring diagrams, and to use specialized tools (pin/socket contact crimping pliers, terminal pliers, Raychem splicing pliers and an electrical soldering iron). It included a 480-hour work placement at Airbus Military.',
   },
   {
-    company: 'I.E.S. Atenea, Mairena del Aljarafe (Sevilla)',
-    role: 'Technical Degree — Electrical Systems and Installations Technician',
+    title: 'Technical Degree — Electrical Systems and Installations Technician',
+    institution: 'I.E.S. Atenea, Mairena del Aljarafe (Sevilla)',
     from: '2001',
     to: '2004',
     description: 'Foundational technical training in electrical systems and installations, the starting point for my later specialization in aeronautical electrical manufacturing.',
@@ -501,6 +543,10 @@ export const translations = {
       subtitle: 'Tecnologías con las que trabajo',
       categories: skills_es,
     },
+    education: {
+      title: 'Formación',
+      items: education_es,
+    },
     experience: {
       title: 'Experiencia',
       items: experience_es,
@@ -576,6 +622,10 @@ export const translations = {
       title: 'Skills',
       subtitle: 'Technologies I work with',
       categories: skills_en,
+    },
+    education: {
+      title: 'Education',
+      items: education_en,
     },
     experience: {
       title: 'Experience',
