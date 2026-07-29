@@ -607,9 +607,9 @@ export const translations = {
     },
     about: {
       title: 'About me',
-      bio1: 'Full-stack developer with a Higher Technical Degree in Web Application Development (DAW), with experience building complete applications, from the interface down to the database.',
-      bio2: "On the front-end I work with Angular, combining TypeScript and JavaScript to build reactive, maintainable interfaces. On the back-end I build APIs and business logic with PHP and Java, with relational databases like MySQL, applying good schema design practices. I complement development with automated testing (Cypress) to ensure code quality.",
-      bio3: "I'm currently developing FluyQo, a production application spanning the full cycle: design, development and deployment. I'm also continuously expanding my training, deepening my Angular skills and soon starting with React, to get a fuller picture of today's front-end ecosystem. I care about clean code and design patterns, and I'm looking for my first professional opportunity where I can add value from day one.",
+      bio1: 'Full-stack developer with a Higher Technical Degree in Web Application Development (DAW). I build complete applications, from the interface down to the database.',
+      bio2: "On the front-end I work with Angular, combining TypeScript and JavaScript to build reactive, maintainable interfaces. On the back-end I build APIs and business logic with PHP, with relational databases like MySQL, applying good schema design practices. I complement development with automated testing (Cypress) to ensure code quality.",
+      bio3: "I'm currently developing FluyQo, a production application I cover end to end: design, development and deployment. I keep continuously expanding my training, deepening my Angular skills and exploring the broader front-end ecosystem. I care about clean code and design patterns, and I also bring 6 years of certified professional experience in precision electronic manufacturing (aerospace sector), which gives me discipline, rigor, and the ability to work in demanding environments.",
     },
     projects: {
       title: 'Projects',
