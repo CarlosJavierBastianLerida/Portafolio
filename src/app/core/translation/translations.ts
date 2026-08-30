@@ -144,11 +144,11 @@ const skills_en: SkillCategory[] = [
 
 const experience_es: ExperienceItem[] = [
   {
-    company: '',
-    role: 'En búsqueda de mi primera oportunidad profesional',
-    from: '',
-    to: 'Disponibilidad inmediata',
-    description: 'Técnico Superior en DAW con experiencia práctica en desarrollo full-stack a través de proyectos propios en producción, incluyendo una aplicación SaaS completa (diseño, desarrollo y despliegue).',
+    company: 'Libnamic · Contrato de prácticas',
+    role: 'Desarrollador de Aplicaciones Web Junior',
+    from: 'feb. 2026',
+    to: 'may. 2026',
+    description: 'Prácticas como Desarrollador Frontend Junior dentro del equipo técnico de Libnamic, centradas en la creación y el mantenimiento de componentes de interfaz con Vue.js, la identificación y corrección de bugs para optimizar la experiencia de usuario, y la integración en el flujo de trabajo del equipo, colaborando en la estimación y el despliegue de tareas. Me aportó una alta capacidad de adaptación, resolución de problemas bajo supervisión y autonomía técnica.',
   },
   {
     company: 'Pike Bike · Decathlon · Herba Ricemills',
@@ -206,11 +206,11 @@ const education_es: EducationItem[] = [
 
 const experience_en: ExperienceItem[] = [
   {
-    company: '',
-    role: 'Seeking my first professional opportunity',
-    from: '',
-    to: 'Available immediately',
-    description: 'Higher Technician in Web Application Development with hands-on full-stack experience through my own projects in production, including a complete SaaS application (design, development and deployment).',
+    company: 'Libnamic · Internship contract',
+    role: 'Junior Web Application Developer',
+    from: 'Feb 2026',
+    to: 'May 2026',
+    description: "Internship as a Junior Frontend Developer within Libnamic's technical team, focused on creating and maintaining UI components with Vue.js, identifying and fixing bugs to improve the user experience, and integrating into the team's workflow by collaborating on task estimation and deployment. It gave me strong adaptability, problem-solving under supervision, and technical autonomy.",
   },
   {
     company: 'Pike Bike · Decathlon · Herba Ricemills',
