@@ -14,15 +14,15 @@
     </nav>
 
     <div class="flex items-center gap-3">
-      <div class="flex items-center rounded-md overflow-hidden" style="border: 1px solid rgba(255,255,255,0.08);">
+      <div class="flex items-center rounded-md overflow-hidden" style="border: 1px solid rgba(15,23,42,0.08);">
         <button (click)="setLang('es')" [class.active]="lang() === 'es'" class="font-code text-xs px-3 py-1.5 lang-btn">ES</button>
-        <div style="width:1px; height:16px; background:rgba(255,255,255,0.08);"></div>
+        <div style="width:1px; height:16px; background:rgba(15,23,42,0.08);"></div>
         <button (click)="setLang('en')" [class.active]="lang() === 'en'" class="font-code text-xs px-3 py-1.5 lang-btn">EN</button>
       </div>
 
       <button
         (click)="menuOpen.set(!menuOpen())"
-        class="md:hidden p-2 text-slate-500 hover:text-slate-200 transition-colors"
+        class="md:hidden p-2 text-slate-500 hover:text-slate-900 transition-colors"
         [attr.aria-label]="menuOpen() ? 'Cerrar menú' : 'Abrir menú'">
         @if (menuOpen()) {
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -38,7 +38,7 @@
   </div>
 
   @if (menuOpen()) {
-    <div class="md:hidden border-b border-white/5 px-6 pb-6 flex flex-col gap-4" style="background:#0a0a0a;">
+    <div class="md:hidden border-b border-white/5 px-6 pb-6 flex flex-col gap-4" style="background:#ffffff;">
       <button (click)="scrollTo('about')"      class="nav-link text-left py-1">{{ t().nav.about }}</button>
       <button (click)="scrollTo('projects')"   class="nav-link text-left py-1">{{ t().nav.projects }}</button>
       <button (click)="scrollTo('skills')"     class="nav-link text-left py-1">{{ t().nav.skills }}</button>

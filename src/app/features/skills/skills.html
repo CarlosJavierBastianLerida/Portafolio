@@ -1,9 +1,9 @@
-<section id="skills" class="py-32" style="background:#111; border-top: 1px solid rgba(255,255,255,0.05);">
+<section id="skills" class="py-32" style="background:#ffffff; border-top: 1px solid rgba(15,23,42,0.05);">
   <div class="max-w-6xl mx-auto px-6">
 
     <div animateOnScroll class="mb-20">
       <p class="font-code text-xs text-slate-600 tracking-widest mb-4">// skills</p>
-      <h2 class="text-4xl md:text-5xl font-bold text-slate-100 mb-2">{{ t().skills.title }}</h2>
+      <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-2 font-display">{{ t().skills.title }}</h2>
       <p class="text-slate-600 text-sm mb-4">{{ t().skills.subtitle }}</p>
       <div class="section-divider"></div>
     </div>
@@ -22,11 +22,11 @@
                   <i [class]="skill.icon" style="font-size: 1.25rem; width: 1.4rem; flex-shrink: 0;"></i>
                 } @else {
                   <span class="font-code w-5 h-5 flex items-center justify-center rounded text-xs font-bold flex-shrink-0"
-                    style="background: rgba(129,140,248,0.12); color: #818cf8;">
+                    style="background: rgba(79,70,229,0.12); color: #4f46e5;">
                     {{ skill.name.charAt(0) }}
                   </span>
                 }
-                <span class="text-sm text-slate-400 whitespace-nowrap">{{ skill.name }}</span>
+                <span class="text-sm text-slate-600 whitespace-nowrap">{{ skill.name }}</span>
               </div>
             }
           </div>
